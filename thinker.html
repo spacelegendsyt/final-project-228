@@ -1,3 +1,188 @@
 <h1>
   Think critically page (coding and shit)
 </h1>
+
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <title>think criticaly</title>
+    
+    <style>
+      body {
+        font-size: 20px;
+      }
+      .carousel {
+        margin: 100px auto;
+        width: 90%;
+        border: 5px solid red;
+        display: flex;
+        overflow-x: auto;
+      }
+      
+      .carousel::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .group{
+        display: flex;
+        animation: spin 17s infinite linear;
+        align-items: center;
+        gap: 1em;
+        padding-right: 1em;
+      }
+      
+      .card {
+        flex: 0 0 5em;
+        height: 530px;
+        padding: 0em;
+        background: cornflowerblue;
+        font-size: 3rem;
+        border-radius: .2em;
+        text-align: center;
+        align-content: center;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: .4em 0px;
+      }
+      
+      @keyframes spin {
+        from {translate: 0;}
+        to {translate: -100%;}
+      }
+      
+      .horiz-flic {
+        background: green;
+        width: 380px;
+        height: 250px;
+        border-radius: .2em;
+      }
+      
+      .vert-flic {
+        background: yellow;
+        width: 250px;
+        height: 357px;
+        border-radius: .2em;
+      }
+      
+      .horiz-s-flic {
+        background: orange;
+        width: 250px;
+        height: 143px;
+        border-radius: .2em;
+      }
+      
+    </style>
+    
+    
+    
+  </head>
+  
+  <body>
+    <div class="carousel">
+      <div class="group">
+        <div class="card">
+          <div class="horiz-flic">
+            horiz1
+          </div>
+          <div class="horiz-flic">
+            horiz1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="horiz-flic">
+            horiz2
+          </div>
+          <div class="horiz-flic">
+            horiz2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-s-flic">
+            horiz s 2
+          </div>
+          <div class="vert-flic">
+            vert2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-flic">
+            horiz3
+          </div>
+          <div class="horiz-flic">
+            horiz3
+          </div>
+        </div>
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="card">
+          <div class="horiz-flic">
+            horiz1
+          </div>
+          <div class="horiz-flic">
+            horiz1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="horiz-flic">
+            horiz2
+          </div>
+          <div class="horiz-flic">
+            horiz2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-s-flic">
+            horiz s 2
+          </div>
+          <div class="vert-flic">
+            vert2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-flic">
+            horiz3
+          </div>
+          <div class="horiz-flic">
+            horiz3
+          </div>
+        </div>
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

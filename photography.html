@@ -1,3 +1,674 @@
-<h1>
-  photography page
-</h1>
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <title>Photography page</title>
+    <meta charset="utf-8">
+    
+    <!--Header & body font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    
+    
+    
+    <style>
+      /* text stuff*/
+      body {
+        background-color: #0A001E;
+        width: 1440px;
+        margin: 0 auto;
+        
+        font-size: 20px;
+        color: white;
+        font-family: "Source Sans 3", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+      }
+      
+      h1 {
+        font-family: "Sedgwick Ave Display", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3.2em;
+      }
+      
+      h2 {
+        font-family: "Sedgwick Ave Display", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.7em;
+      }
+      
+      h3 {
+        font-family: "Sedgwick Ave Display", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2em;
+      }
+      
+       /* Header sutff */
+      header {
+        background-color: #171717;
+        height: 137px;
+        position: sticky;
+        top: 0;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+        z-index: 1000;
+      }
+      
+      ul {
+        list-style: none;
+        font-size: 1em;
+        color: white;
+        text-align: right;
+        
+        font-family: "Source Sans 3", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        text-transform: uppercase;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      
+      li:last-child {
+        margin-right: 0;
+      }
+      
+      ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      
+      ul li a:hover {
+        text-decoration: underline;
+      }
+      
+    /* Carousel stuff */  
+      .carousel {
+        margin: 10px auto;
+        width: 1200px;
+        border: 5px solid red;
+        display: flex;
+        overflow-x: auto;
+      }
+      
+      .carousel::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .group{
+        display: flex;
+        animation: spin 30s infinite linear;
+        align-items: center;
+        gap: 1em;
+        padding-right: 1em;
+      }
+      
+      .card {
+        flex: 0 0 5em;
+        height: 530px;
+        padding: 0em;
+        background: cornflowerblue;
+        font-size: 3rem;
+        border-radius: .2em;
+        text-align: center;
+        align-content: center;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: .4em 0px;
+      }
+      
+      @keyframes spin {
+        from {translate: 0;}
+        to {translate: -100%;}
+      }
+      
+      .horiz-flic {
+        background: green;
+        width: 380px;
+        height: 250px;
+        border-radius: .2em;
+      }
+      
+      .vert-flic {
+        background: yellow;
+        width: 250px;
+        height: 357px;
+        border-radius: .2em;
+      }
+      
+      .horiz-s-flic {
+        background: orange;
+        width: 250px;
+        height: 143px;
+        border-radius: .2em;
+      }
+      
+      .thee-container {
+        width: 1200px;
+        margin: auto;
+        background-color: red;
+      }
+      
+      .pic-project h3 {
+        margin-bottom: 0px;
+      }
+      
+      .pic-project {
+        margin-bottom: 60px;
+      }
+      
+    </style>
+    
+    
+  </head>
+  
+  
+  <body>
+    
+    <header>
+     <h1>SAHV</h1>
+     <nav>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="videography.html">Videography</a></li>
+        <li><a href="graphics.html">Graphics Design</a></li>
+        <li><a href="thinker.html">Think Critically</a></li>
+      </ul>
+      </nav>
+     </header>
+  
+  <div class="thee-container">
+    <h1>Shan &amp; Photography</h1>
+    <p>Blurb about how I absolutely love to take pictures, got it from
+      my dad. <br> Cameras I use. Some other sentimental stuff me thinks
+    </p>
+    
+    <div class="pic-project">
+      <h3>GBDA 201 - Photography Assignment</h3>
+      <p>Under each heading, I want to have a little blurb about where
+      &amp; why these <br> pictures were taken. The date &amp; also the camera 
+      equipment used me thinks.
+      </p>
+      
+       <!-- Carousel 1 -->
+  <div class="carousel">
+      <div class="group">
+        <div class="card">
+          <div class="horiz-flic">
+            horiz1
+          </div>
+          <div class="horiz-flic">
+            horiz1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="horiz-flic">
+            horiz2
+          </div>
+          <div class="horiz-flic">
+            horiz2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-s-flic">
+            horiz s 2
+          </div>
+          <div class="vert-flic">
+            vert2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-flic">
+            horiz3
+          </div>
+          <div class="horiz-flic">
+            horiz3
+          </div>
+        </div>
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="card">
+          <div class="horiz-flic">
+            horiz1
+          </div>
+          <div class="horiz-flic">
+            horiz1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="horiz-flic">
+            horiz2
+          </div>
+          <div class="horiz-flic">
+            horiz2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-s-flic">
+            horiz s 2
+          </div>
+          <div class="vert-flic">
+            vert2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-flic">
+            horiz3
+          </div>
+          <div class="horiz-flic">
+            horiz3
+          </div>
+        </div>
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>  
+    
+    
+    <div class="pic-project">
+      <h3>ACS Event - Bartending &amp; Besties</h3>
+      <p>Under each heading, I want to have a little blurb about where
+      &amp; why these <br> pictures were taken. The date &amp; also the camera 
+      equipment used me thinks.
+      </p>
+      
+       <!-- Carousel 2 -->
+  <div class="carousel">
+      <div class="group">
+        <div class="card">
+          <div class="horiz-flic">
+            horiz1
+          </div>
+          <div class="horiz-flic">
+            horiz1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="horiz-flic">
+            horiz2
+          </div>
+          <div class="horiz-flic">
+            horiz2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-s-flic">
+            horiz s 2
+          </div>
+          <div class="vert-flic">
+            vert2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-flic">
+            horiz3
+          </div>
+          <div class="horiz-flic">
+            horiz3
+          </div>
+        </div>
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="card">
+          <div class="horiz-flic">
+            horiz1
+          </div>
+          <div class="horiz-flic">
+            horiz1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="horiz-flic">
+            horiz2
+          </div>
+          <div class="horiz-flic">
+            horiz2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-s-flic">
+            horiz s 2
+          </div>
+          <div class="vert-flic">
+            vert2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-flic">
+            horiz3
+          </div>
+          <div class="horiz-flic">
+            horiz3
+          </div>
+        </div>
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>  
+    
+    
+    
+    <div class="pic-project">
+      <h3>QC Graduation</h3>
+      <p>Under each heading, I want to have a little blurb about where
+      &amp; why these <br> pictures were taken. The date &amp; also the camera 
+      equipment used me thinks.
+      </p>
+      
+       <!-- Carousel 1 -->
+  <div class="carousel">
+      <div class="group">
+        <div class="card">
+          <div class="horiz-flic">
+            horiz1
+          </div>
+          <div class="horiz-flic">
+            horiz1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="horiz-flic">
+            horiz2
+          </div>
+          <div class="horiz-flic">
+            horiz2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-s-flic">
+            horiz s 2
+          </div>
+          <div class="vert-flic">
+            vert2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-flic">
+            horiz3
+          </div>
+          <div class="horiz-flic">
+            horiz3
+          </div>
+        </div>
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="card">
+          <div class="horiz-flic">
+            horiz1
+          </div>
+          <div class="horiz-flic">
+            horiz1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="horiz-flic">
+            horiz2
+          </div>
+          <div class="horiz-flic">
+            horiz2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-s-flic">
+            horiz s 2
+          </div>
+          <div class="vert-flic">
+            vert2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-flic">
+            horiz3
+          </div>
+          <div class="horiz-flic">
+            horiz3
+          </div>
+        </div>
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    
+    <div class="pic-project">
+      <h3>Men's Pilates Challenge</h3>
+      <p>Under each heading, I want to have a little blurb about where
+      &amp; why these <br> pictures were taken. The date &amp; also the camera 
+      equipment used me thinks.
+      </p>
+      
+       <!-- Carousel 1 -->
+  <div class="carousel">
+      <div class="group">
+        <div class="card">
+          <div class="horiz-flic">
+            horiz1
+          </div>
+          <div class="horiz-flic">
+            horiz1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="horiz-flic">
+            horiz2
+          </div>
+          <div class="horiz-flic">
+            horiz2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-s-flic">
+            horiz s 2
+          </div>
+          <div class="vert-flic">
+            vert2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-flic">
+            horiz3
+          </div>
+          <div class="horiz-flic">
+            horiz3
+          </div>
+        </div>
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="card">
+          <div class="horiz-flic">
+            horiz1
+          </div>
+          <div class="horiz-flic">
+            horiz1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="horiz-flic">
+            horiz2
+          </div>
+          <div class="horiz-flic">
+            horiz2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-s-flic">
+            horiz s 2
+          </div>
+          <div class="vert-flic">
+            vert2
+          </div>
+        </div>
+        <div class="card">
+          <div class="horiz-flic">
+            horiz3
+          </div>
+          <div class="horiz-flic">
+            horiz3
+          </div>
+        </div>
+        <div class="card">
+          <div class="vert-flic">
+            vert1
+          </div>
+          <div class="horiz-s-flic">
+            horiz s 1
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    
+    </div>
+    
+    
+    
+   
+    
+  </body>
+</html>
