@@ -1,3 +1,271 @@
-<h1>
-  Graphics design page ho
-</h1>
+<!DOCTYPE html>
+<html lang="en-ca">
+ <head>
+    <title>Graphics design</title>
+    <meta charset="utf-8">
+    
+    <!--Header & body font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    <style>
+      /* Text stuff */
+      body {
+        background-color: #0A001E;
+        width: 1440px;
+        margin: 0 auto;
+        
+        font-size: 20px;
+        color: white;
+        font-family: "Source Sans 3", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+      }
+      
+      p {
+        font-size: 20px;
+        color: white;
+        font-family: "Source Sans 3", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+      }
+      
+      h1 {
+        font-family: "Sedgwick Ave Display", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3.2em;
+      }
+      
+      h2 {
+        font-family: "Sedgwick Ave Display", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.7em;
+        margin-bottom: -.3em;
+      }
+      
+      h3 {
+        font-family: "Sedgwick Ave Display", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2em;
+      }
+      
+      /* Header sutff */
+      header {
+        background-color: #171717;
+        height: 137px;
+        position: sticky;
+        top: 0;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+      }
+      
+      ul {
+        list-style: none;
+        font-size: 1em;
+        color: white;
+        text-align: right;
+        
+        font-family: "Source Sans 3", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        text-transform: uppercase;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      
+      li:last-child {
+        margin-right: 0;
+      }
+      
+      ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      
+      ul li a:hover {
+        text-decoration: underline;
+      }
+      
+      .thee-container {
+        width: 1200px;
+        margin: auto;
+        background-color: red;
+      }
+      
+      .graphics-proj p {
+        margin-top: -1.5em;
+      }
+      
+      .event-posters {
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 25px 12.5px;
+        margin: 0;
+        padding: 0 0;
+      }
+      
+      .poster {
+        width: 383px;
+        height: 526px;
+        background-color: #171717;
+        border-radius: 10px;
+      }
+      
+      .mom-cards {
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 42% 58%;
+        gap: 25px 12.5px;
+        margin-top: 40px;
+        padding: 0 0;
+      }
+      
+      .mom-cards p {
+        margin-top: -1.21em;
+      }
+      
+      .temp-rect {
+        width: 500px;
+        height: 281px;
+        background-color: lightblue;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+      
+      .icons-container {
+        width: 1200px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        gap: auto;
+        margin-top: 40px;
+        padding: 0 0;
+      }
+      
+      .icons{
+        width: 290px;
+        height: 280px;
+        background-color: #555555;
+        border-radius: 10px;
+      }
+      
+      /* Footer stuff */
+      footer {
+        background-color: #171717;
+        height: 212px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+      }
+      
+   </style>
+  </head>
+  
+  <body>
+    <header>
+     <h1>SAHV</h1>
+     <nav>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="videography.html">Videography</a></li>
+        <li><a href="graphics.html">Graphics Design</a></li>
+        <li><a href="thinker.html">Think Critically</a></li>
+      </ul>
+    </nav>
+    </header>
+    
+    <div class="thee-container">
+      <h1>Shan &amp; Graphics Design</h1>
+      <p>Blurb about my love for graphics design, journey with it
+        and whats not. <br> Could mention how it's a lot of posters 
+        for various clubs and shit im in
+      </p>
+      
+      <div class="graphics-proj">
+        <h3>ACS Event Posters</h3>
+        <p>
+          Im an exec member of the ACS - Graphics &amp; Media lead. <br>
+          Talk about how this gives me the opportunity to be creative while <br>
+          advocating for mu culture. Additionally, I get to worth with an <br>
+          older member of GBDA and so she mentors me. These are some of the <br>
+          posters we collaborated on.
+        </p>
+        
+        <div class="event-posters">
+          <div class="poster">
+            1
+          </div>
+           <div class="poster">
+            2
+          </div>
+           <div class="poster">
+            3
+          </div>
+        </div>
+      </div>
+      
+      <div class="mom-cards">
+        <div class="grid-item">
+          <div class="temp-rect">placeholder</div>
+        </div>
+        <div class="grid-item">
+          <h3>Physiocare Loyalty Cards</h3>
+          <p>
+            My mom owns a physiotherapy clinic. She has loyalty cards that <br>
+            you can use to pay for treatments / gift to ppl etc. Helped her <br>
+            redesign the face of the cards.<br><br>
+            Could talk about what software I used. Talk about why I designed <br>
+            them in the way that I did (warmth, iviting etc).
+          </p>
+        </div>
+      </div>
+      
+      
+      <div class="graphics-proj">
+        <h3>Adobe Iconography Practise</h3>
+        <p>
+          Sometimes i make icons and stuff on adobe illustrator 
+          for the fun <br> of it. Yappa yappa yappa other stuff other stuff.
+        </p>
+      </div>
+      
+      <div class="icons-container">
+        <div class="icons">1</div>
+        <div class="icons">1</div>
+        <div class="icons">1</div>
+        <div class="icons">1</div>
+        <div class="icons">1</div>
+        <div class="icons">1</div>
+        <div class="icons">1</div>
+        <div class="icons">1</div>
+      </div>
+    </div>
+    
+    <footer>
+     <h3>
+       Let's get up to some shananigans together!
+       <p>
+         Barbadian phone: +1 (246) 827-1222 <br>
+         Canadian phone: +1 (226) 201-7012 <br>
+         Email: svaughan@uwaterloo.ca
+       </p>
+       </h3>
+     </footer>
+  </body>
+</html>
