@@ -212,12 +212,31 @@
       /* Footer stuff */
       footer {
         background-color: #171717;
-        height: 212px;
+        height: 175px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0px 50px;
+      } 
+
+footer a {
+        color: white;
       }
+
+
+.f-logos {
+        display: flex;
+        justify-content: space-between;
+        width: 270px;
+      }
+
+.divider {
+        width: 1px;
+        background-color: #ccc;
+        height: 80%;
+        margin: 0 30px;
+      }
+
     </style>
     
     
@@ -773,15 +792,25 @@
     
     
     <footer>
-     <h3>
-       Let's get up to some shananigans together!
-       <p>
+    <h3>Let's get up to some <br>shananigans together!</h3>
+       
+    <div class="divider"></div>
+    
+     <p>
          Phone (Barbadian): +1 (246) 827-1222 <br>
          Phone (Canadian): +1 (226) 201-7012 <br>
-         Email: svaughan@uwaterloo.ca
-       </p>
-       </h3>
-     </footer>
+         Email: <a href="mailto:svaughan@uwaterloo.ca">svaughan@uwaterloo.ca</a> 
+     </p>
+    
+     <div class="divider"></div>
+    
+   <div class="f-logos">
+    <a href="https://www.instagram.com/itz._.shanz?igsh=MTF0aWY1ZG1tazlreA==" target="_blank"><img src="icons/insta-logo.webp" alt="instagram logo" height="70"></a>
+    <a href="https://www.youtube.com/@SpaceLegends/featured" target="_blank"><img src="icons/yt-logo.webp" alt="youtube logo" height="70"></a>   
+    <a href="https://www.linkedin.com/in/shannon-vaughan-1b9913349/" target="_blank"><img src="icons/linkedin-logo.webp" alt="instagram logo" height="70"></a> 
+    </div>  
+  </footer>
+
     
    
     
