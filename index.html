@@ -66,6 +66,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 0px 50px;
+        z-index: 1000;
       }
       
       ul {
@@ -140,12 +141,37 @@
         background-color: blue;
         border-radius: 10px;
         height: 250px;
-        width: 383px
+        width: 383px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
       }
       
-      .grid-item:hover {
-        background-color: white;
+      .grid-item img {
+        border-radius: 10px;
+        height: 250px;
+        width: 383px;
+        position: absolute;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+      }
+      
+      .img-hover {
+        opacity: 0;
+      }
+      
+      .grid-item:hover .img-hover {
+        opacity: 1;
         box-shadow: 5px 10px #888888;
+      }
+      
+      .grid-item:hover .img-default {
+        opacity: 0;
+      }
+      
+      .grid-link {
+        text-decoration: none;
+        display: inline-block; /* or block if you want full width */
       }
       
       .about-me {
@@ -214,21 +240,32 @@
        </p>
        
        <div class="projects-grid">
+         <a href="photography.html#gbda-201-a1" class="grid-link">
          <div class="grid-item">
-           prj 1
+           <img src="pp/pp-1.png" alt="sum" class="img-default">
+           <img src="pp/pp-1-s.png" alt="sum" class="img-hover">
          </div>
+         </a>
          
+         <a href="videography.html#silent-film" class="grid-link">
          <div class="grid-item">
-           prj 2
+           <img src="pp/pp-3.png" alt="sum" class="img-default">
+           <img src="pp/pp-3-h.png" alt="sum" class="img-hover">
          </div>
+         </a>
+         
          
          <div class="grid-item">
            prj 3
          </div>
          
+         <a href="photography.html#qc-grad" class="grid-link">
          <div class="grid-item">
-           prj 4
+           <img src="pp/pp-2.png" alt="sum" class="img-default">
+           <img src="pp/pp-2-h.png" alt="sum" class="img-hover">
          </div>
+         </a>
+         
          
          <div class="grid-item">
            prj 5
